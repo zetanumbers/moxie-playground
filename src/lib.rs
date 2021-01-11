@@ -2,6 +2,10 @@ use moxie_dom::prelude::*;
 use wasm_bindgen::prelude::*;
 
 mod app;
+mod arrows;
+mod checkbox;
+mod points;
+mod utils;
 
 // When the `wee_alloc` feature is enabled, this uses `wee_alloc` as the global
 // allocator.

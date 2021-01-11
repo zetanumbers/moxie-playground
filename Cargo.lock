@@ -18,9 +18,9 @@ dependencies = [
 [[package]]
 name = "augdom"
 version = "0.2.0-pre"
-source = "git+https://github.com/ZetaNumbers/moxie.git?branch=rust-analyzer-compatibility#a4a70c7b22b05f8ab49a0a4d1e1b25bb7c51ec09"
+source = "git+https://github.com/anp/moxie.git?branch=main#03217078d7e46527196c404ad1fdf8130690167d"
 dependencies = [
- "futures 0.3.8",
+ "futures",
  "gloo-timers",
  "js-sys",
  "paste",
@@ -107,7 +107,7 @@ checksum = "9ea835d29036a4087793836fa931b08837ad5e957da9e23886b29586fb9b6650"
 [[package]]
 name = "dyn-cache"
 version = "0.12.1"
-source = "git+https://github.com/ZetaNumbers/moxie.git?branch=rust-analyzer-compatibility#a4a70c7b22b05f8ab49a0a4d1e1b25bb7c51ec09"
+source = "git+https://github.com/anp/moxie.git?branch=main#03217078d7e46527196c404ad1fdf8130690167d"
 dependencies = [
  "downcast-rs",
  "hash_hasher",
@@ -125,15 +125,9 @@ checksum = "a06f77d526c1a601b7c4cdd98f54b5eaabffc14d5f2f0296febdc7f357c6d3ba"
 
 [[package]]
 name = "futures"
-version = "0.1.30"
+version = "0.3.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4c7e4c2612746b0df8fed4ce0c69156021b704c9aefa360311c04e6e9e002eed"
-
-[[package]]
-name = "futures"
-version = "0.3.8"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9b3b0c040a1fe6529d30b3c5944b280c7f0dcb2930d2c3062bca967b602583d0"
+checksum = "c70be434c505aee38639abccb918163b63158a4b4bb791b45b7023044bdc3c9c"
 dependencies = [
  "futures-channel",
  "futures-core",
@@ -146,9 +140,9 @@ dependencies = [
 
 [[package]]
 name = "futures-channel"
-version = "0.3.8"
+version = "0.3.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4b7109687aa4e177ef6fe84553af6280ef2778bdb7783ba44c9dc3399110fe64"
+checksum = "f01c61843314e95f96cc9245702248733a3a3d744e43e2e755e3c7af8348a0a9"
 dependencies = [
  "futures-core",
  "futures-sink",
@@ -156,15 +150,15 @@ dependencies = [
 
 [[package]]
 name = "futures-core"
-version = "0.3.8"
+version = "0.3.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "847ce131b72ffb13b6109a221da9ad97a64cbe48feb1028356b836b47b8f1748"
+checksum = "db8d3b0917ff63a2a96173133c02818fac4a746b0a57569d3baca9ec0e945e08"
 
 [[package]]
 name = "futures-executor"
-version = "0.3.8"
+version = "0.3.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4caa2b2b68b880003057c1dd49f1ed937e38f22fcf6c212188a121f08cf40a65"
+checksum = "9ee9ca2f7eb4475772cf39dd1cd06208dce2670ad38f4d9c7262b3e15f127068"
 dependencies = [
  "futures-core",
  "futures-task",
@@ -173,42 +167,42 @@ dependencies = [
 
 [[package]]
 name = "futures-io"
-version = "0.3.8"
+version = "0.3.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "611834ce18aaa1bd13c4b374f5d653e1027cf99b6b502584ff8c9a64413b30bb"
+checksum = "e37c1a51b037b80922864b8eed90692c5cd8abd4c71ce49b77146caa47f3253b"
 
 [[package]]
 name = "futures-macro"
-version = "0.3.8"
+version = "0.3.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "77408a692f1f97bcc61dc001d752e00643408fbc922e4d634c655df50d595556"
+checksum = "0f8719ca0e1f3c5e34f3efe4570ef2c0610ca6da85ae7990d472e9cbfba13664"
 dependencies = [
  "proc-macro-hack",
- "proc-macro2 1.0.24",
- "quote 1.0.8",
+ "proc-macro2",
+ "quote",
  "syn",
 ]
 
 [[package]]
 name = "futures-sink"
-version = "0.3.8"
+version = "0.3.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f878195a49cee50e006b02b93cf7e0a95a38ac7b776b4c4d9cc1207cd20fcb3d"
+checksum = "f6adabac1290109cfa089f79192fb6244ad2c3f1cc2281f3e1dd987592b71feb"
 
 [[package]]
 name = "futures-task"
-version = "0.3.8"
+version = "0.3.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7c554eb5bf48b2426c4771ab68c6b14468b6e76cc90996f528c3338d761a4d0d"
+checksum = "a92a0843a2ff66823a8f7c77bffe9a09be2b64e533562c412d63075643ec0038"
 dependencies = [
  "once_cell",
 ]
 
 [[package]]
 name = "futures-util"
-version = "0.3.8"
+version = "0.3.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d304cff4a7b99cfb7986f7d43fbe93d175e72e704a8860787cc95e9ffd85cbd2"
+checksum = "036a2107cdeb57f6d7322f1b6c363dad67cd63ca3b7d1b925bdf75bd5d96cda9"
 dependencies = [
  "futures-channel",
  "futures-core",
@@ -217,7 +211,7 @@ dependencies = [
  "futures-sink",
  "futures-task",
  "memchr",
- "pin-project",
+ "pin-project-lite",
  "pin-utils",
  "proc-macro-hack",
  "proc-macro-nested",
@@ -255,7 +249,7 @@ dependencies = [
 [[package]]
 name = "illicit"
 version = "1.1.1"
-source = "git+https://github.com/ZetaNumbers/moxie.git?branch=rust-analyzer-compatibility#a4a70c7b22b05f8ab49a0a4d1e1b25bb7c51ec09"
+source = "git+https://github.com/anp/moxie.git?branch=main#03217078d7e46527196c404ad1fdf8130690167d"
 dependencies = [
  "illicit-macro",
  "owning_ref",
@@ -265,10 +259,10 @@ dependencies = [
 [[package]]
 name = "illicit-macro"
 version = "1.0.0"
-source = "git+https://github.com/ZetaNumbers/moxie.git?branch=rust-analyzer-compatibility#a4a70c7b22b05f8ab49a0a4d1e1b25bb7c51ec09"
+source = "git+https://github.com/anp/moxie.git?branch=main#03217078d7e46527196c404ad1fdf8130690167d"
 dependencies = [
  "proc-macro-error",
- "quote 1.0.8",
+ "quote",
  "syn",
 ]
 
@@ -301,9 +295,9 @@ checksum = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
 
 [[package]]
 name = "libc"
-version = "0.2.81"
+version = "0.2.82"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1482821306169ec4d07f6aca392a4681f66c75c9918aa49641a2595db64053cb"
+checksum = "89203f3fba0a3795506acaad8ebce3c80c0af93f994d5a1d7a0b1eeb23271929"
 
 [[package]]
 name = "lock_api"
@@ -316,9 +310,9 @@ dependencies = [
 
 [[package]]
 name = "log"
-version = "0.4.11"
+version = "0.4.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4fabed175da42fed1fa0746b0ea71f412aa9d35e76e95e59b192c64b9dc2bf8b"
+checksum = "fcf3805d4480bb5b86070dcfeb9e2cb2ebc148adb753c5cca5f884d1d65a42b2"
 dependencies = [
  "cfg-if 0.1.10",
 ]
@@ -337,8 +331,8 @@ checksum = "8452105ba047068f40ff7093dd1d9da90898e63dd61736462e9cdda6a90ad3c3"
 
 [[package]]
 name = "mox"
-version = "0.10.0"
-source = "git+https://github.com/ZetaNumbers/moxie.git?branch=rust-analyzer-compatibility#a4a70c7b22b05f8ab49a0a4d1e1b25bb7c51ec09"
+version = "0.11.0"
+source = "git+https://github.com/anp/moxie.git?branch=main#03217078d7e46527196c404ad1fdf8130690167d"
 dependencies = [
  "mox-impl",
  "topo",
@@ -346,11 +340,11 @@ dependencies = [
 
 [[package]]
 name = "mox-impl"
-version = "0.10.0"
-source = "git+https://github.com/ZetaNumbers/moxie.git?branch=rust-analyzer-compatibility#a4a70c7b22b05f8ab49a0a4d1e1b25bb7c51ec09"
+version = "0.11.0"
+source = "git+https://github.com/anp/moxie.git?branch=main#03217078d7e46527196c404ad1fdf8130690167d"
 dependencies = [
- "proc-macro2 1.0.24",
- "quote 1.0.8",
+ "proc-macro2",
+ "quote",
  "syn",
  "syn-rsx",
 ]
@@ -358,10 +352,10 @@ dependencies = [
 [[package]]
 name = "moxie"
 version = "0.7.1-pre"
-source = "git+https://github.com/ZetaNumbers/moxie.git?branch=rust-analyzer-compatibility#a4a70c7b22b05f8ab49a0a4d1e1b25bb7c51ec09"
+source = "git+https://github.com/anp/moxie.git?branch=main#03217078d7e46527196c404ad1fdf8130690167d"
 dependencies = [
  "dyn-cache",
- "futures 0.3.8",
+ "futures",
  "illicit",
  "moxie-macros",
  "parking_lot",
@@ -373,10 +367,10 @@ dependencies = [
 [[package]]
 name = "moxie-dom"
 version = "0.3.0-pre"
-source = "git+https://github.com/ZetaNumbers/moxie.git?branch=rust-analyzer-compatibility#a4a70c7b22b05f8ab49a0a4d1e1b25bb7c51ec09"
+source = "git+https://github.com/anp/moxie.git?branch=main#03217078d7e46527196c404ad1fdf8130690167d"
 dependencies = [
  "augdom",
- "futures 0.3.8",
+ "futures",
  "illicit",
  "moxie",
  "paste",
@@ -384,15 +378,15 @@ dependencies = [
  "scopeguard",
  "topo",
  "wasm-bindgen",
- "wasm-bindgen-futures 0.4.19",
+ "wasm-bindgen-futures",
 ]
 
 [[package]]
 name = "moxie-macros"
 version = "0.1.0-pre"
-source = "git+https://github.com/ZetaNumbers/moxie.git?branch=rust-analyzer-compatibility#a4a70c7b22b05f8ab49a0a4d1e1b25bb7c51ec09"
+source = "git+https://github.com/anp/moxie.git?branch=main#03217078d7e46527196c404ad1fdf8130690167d"
 dependencies = [
- "quote 1.0.8",
+ "quote",
  "syn",
 ]
 
@@ -402,15 +396,12 @@ version = "0.1.0"
 dependencies = [
  "cgmath",
  "console_error_panic_hook",
- "futures 0.1.30",
  "instant",
  "js-sys",
  "mox",
  "moxie",
  "moxie-dom",
  "wasm-bindgen",
- "wasm-bindgen-futures 0.3.27",
- "wasm-bindgen-test",
  "web-sys",
  "wee_alloc",
 ]
@@ -471,30 +462,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c5d65c4d95931acda4498f675e332fcbdc9a06705cd07086c510e9b6009cd1c1"
 
 [[package]]
-name = "pin-project"
-version = "1.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9ccc2237c2c489783abd8c4c80e5450fc0e98644555b1364da68cc29aa151ca7"
-dependencies = [
- "pin-project-internal",
-]
-
-[[package]]
-name = "pin-project-internal"
-version = "1.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f8e8d2bf0b23038a4424865103a4df472855692821aab4e4f5c3312d461d9e5f"
-dependencies = [
- "proc-macro2 1.0.24",
- "quote 1.0.8",
- "syn",
-]
-
-[[package]]
 name = "pin-project-lite"
-version = "0.2.0"
+version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6b063f57ec186e6140e2b8b6921e5f1bd89c7356dda5b33acc5401203ca6131c"
+checksum = "439697af366c49a6d0a010c56a0d97685bc140ce0d377b13a2ea2aa42d64a827"
 
 [[package]]
 name = "pin-utils"
@@ -505,7 +476,7 @@ checksum = "8b870d8c151b6f2fb93e84a13146138f05d02ed11c7e7c54f8826aaaf7c9f184"
 [[package]]
 name = "prettiest"
 version = "0.2.1"
-source = "git+https://github.com/ZetaNumbers/moxie.git?branch=rust-analyzer-compatibility#a4a70c7b22b05f8ab49a0a4d1e1b25bb7c51ec09"
+source = "git+https://github.com/anp/moxie.git?branch=main#03217078d7e46527196c404ad1fdf8130690167d"
 dependencies = [
  "js-sys",
  "scopeguard",
@@ -520,8 +491,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "da25490ff9892aab3fcf7c36f08cfb902dd3e71ca0f9f9517bea02a73a5ce38c"
 dependencies = [
  "proc-macro-error-attr",
- "proc-macro2 1.0.24",
- "quote 1.0.8",
+ "proc-macro2",
+ "quote",
  "syn",
  "version_check",
 ]
@@ -532,8 +503,8 @@ version = "1.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a1be40180e52ecc98ad80b184934baf3d0d29f979574e439af5a55274b35f869"
 dependencies = [
- "proc-macro2 1.0.24",
- "quote 1.0.8",
+ "proc-macro2",
+ "quote",
  "version_check",
 ]
 
@@ -551,20 +522,11 @@ checksum = "eba180dafb9038b050a4c280019bbedf9f2467b61e5d892dcad585bb57aadc5a"
 
 [[package]]
 name = "proc-macro2"
-version = "0.4.30"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cf3d2011ab5c909338f7887f4fc896d35932e29146c12c8d01da6b22a80ba759"
-dependencies = [
- "unicode-xid 0.1.0",
-]
-
-[[package]]
-name = "proc-macro2"
 version = "1.0.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1e0704ee1a7e00d7bb417d0770ea303c1bccbabf0ef1667dae92b5967f5f8a71"
 dependencies = [
- "unicode-xid 0.2.1",
+ "unicode-xid",
 ]
 
 [[package]]
@@ -578,28 +540,19 @@ dependencies = [
 
 [[package]]
 name = "quote"
-version = "0.6.13"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ce23b6b870e8f94f81fb0a363d65d86675884b34a09043c81e5562f11c1f8e1"
-dependencies = [
- "proc-macro2 0.4.30",
-]
-
-[[package]]
-name = "quote"
 version = "1.0.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "991431c3519a3f36861882da93630ce66b52918dcf1b8e2fd66b397fc96f28df"
 dependencies = [
- "proc-macro2 1.0.24",
+ "proc-macro2",
 ]
 
 [[package]]
 name = "raf"
 version = "0.2.0-pre"
-source = "git+https://github.com/ZetaNumbers/moxie.git?branch=rust-analyzer-compatibility#a4a70c7b22b05f8ab49a0a4d1e1b25bb7c51ec09"
+source = "git+https://github.com/anp/moxie.git?branch=main#03217078d7e46527196c404ad1fdf8130690167d"
 dependencies = [
- "futures 0.3.8",
+ "futures",
  "wasm-bindgen",
  "web-sys",
 ]
@@ -726,12 +679,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "41cc0f7e4d5d4544e8861606a285bb08d3e70712ccc7d2b84d7c0ccfaf4b05ce"
 
 [[package]]
-name = "scoped-tls"
-version = "1.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ea6a9290e3c9cf0f18145ef7ffa62d68ee0bf5fcd651017e586dc7fd5da448c2"
-
-[[package]]
 name = "scopeguard"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -745,9 +692,9 @@ checksum = "c111b5bd5695e56cffe5129854aa230b39c93a305372fdbb2668ca2394eea9f8"
 
 [[package]]
 name = "smallvec"
-version = "1.6.0"
+version = "1.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1a55ca5f3b68e41c979bf8c46a6f1da892ca4db8f94023ce0bd32407573b1ac0"
+checksum = "fe0f37c9e8f3c5a4a66ad655a93c74daac4ad00c441533bf5c6e7990bb42604e"
 
 [[package]]
 name = "stable_deref_trait"
@@ -763,30 +710,30 @@ checksum = "a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f"
 
 [[package]]
 name = "syn"
-version = "1.0.57"
+version = "1.0.58"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4211ce9909eb971f111059df92c45640aad50a619cf55cd76476be803c4c68e6"
+checksum = "cc60a3d73ea6594cd712d830cc1f0390fd71542d8c8cd24e70cc54cdfd5e05d5"
 dependencies = [
- "proc-macro2 1.0.24",
- "quote 1.0.8",
- "unicode-xid 0.2.1",
+ "proc-macro2",
+ "quote",
+ "unicode-xid",
 ]
 
 [[package]]
 name = "syn-rsx"
-version = "0.7.3"
+version = "0.8.0-beta.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "22ff75cba682dea31200f91acf163a87f3dffc6406f14d0f7704c0b12d612af4"
+checksum = "2a5edb10240c37c3acb0ffe90ea8fc3ce4d5b8c3d45145e2f94ffbfbba11e53a"
 dependencies = [
- "proc-macro2 1.0.24",
- "quote 1.0.8",
+ "proc-macro2",
+ "quote",
  "syn",
 ]
 
 [[package]]
 name = "topo"
 version = "0.13.1"
-source = "git+https://github.com/ZetaNumbers/moxie.git?branch=rust-analyzer-compatibility#a4a70c7b22b05f8ab49a0a4d1e1b25bb7c51ec09"
+source = "git+https://github.com/anp/moxie.git?branch=main#03217078d7e46527196c404ad1fdf8130690167d"
 dependencies = [
  "dyn-cache",
  "illicit",
@@ -798,9 +745,9 @@ dependencies = [
 [[package]]
 name = "topo-macro"
 version = "0.10.0"
-source = "git+https://github.com/ZetaNumbers/moxie.git?branch=rust-analyzer-compatibility#a4a70c7b22b05f8ab49a0a4d1e1b25bb7c51ec09"
+source = "git+https://github.com/anp/moxie.git?branch=main#03217078d7e46527196c404ad1fdf8130690167d"
 dependencies = [
- "quote 1.0.8",
+ "quote",
  "syn",
 ]
 
@@ -822,8 +769,8 @@ version = "0.1.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "80e0ccfc3378da0cce270c946b676a376943f5cd16aeba64568e7939806f4ada"
 dependencies = [
- "proc-macro2 1.0.24",
- "quote 1.0.8",
+ "proc-macro2",
+ "quote",
  "syn",
 ]
 
@@ -835,12 +782,6 @@ checksum = "f50de3927f93d202783f4513cda820ab47ef17f624b03c096e86ef00c67e6b5f"
 dependencies = [
  "lazy_static",
 ]
-
-[[package]]
-name = "unicode-xid"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fc72304796d0818e357ead4e000d19c9c174ab23dc11093ac919054d20a6a7fc"
 
 [[package]]
 name = "unicode-xid"
@@ -873,23 +814,10 @@ dependencies = [
  "bumpalo",
  "lazy_static",
  "log",
- "proc-macro2 1.0.24",
- "quote 1.0.8",
+ "proc-macro2",
+ "quote",
  "syn",
  "wasm-bindgen-shared",
-]
-
-[[package]]
-name = "wasm-bindgen-futures"
-version = "0.3.27"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "83420b37346c311b9ed822af41ec2e82839bfe99867ec6c54e2da43b7538771c"
-dependencies = [
- "cfg-if 0.1.10",
- "futures 0.1.30",
- "js-sys",
- "wasm-bindgen",
- "web-sys",
 ]
 
 [[package]]
@@ -910,7 +838,7 @@ version = "0.2.69"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7a6ac8995ead1f084a8dea1e65f194d0973800c7f571f6edd70adf06ecf77084"
 dependencies = [
- "quote 1.0.8",
+ "quote",
  "wasm-bindgen-macro-support",
 ]
 
@@ -920,8 +848,8 @@ version = "0.2.69"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b5a48c72f299d80557c7c62e37e7225369ecc0c963964059509fbafe917c7549"
 dependencies = [
- "proc-macro2 1.0.24",
- "quote 1.0.8",
+ "proc-macro2",
+ "quote",
  "syn",
  "wasm-bindgen-backend",
  "wasm-bindgen-shared",
@@ -932,31 +860,6 @@ name = "wasm-bindgen-shared"
 version = "0.2.69"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7e7811dd7f9398f14cc76efd356f98f03aa30419dea46aa810d71e819fc97158"
-
-[[package]]
-name = "wasm-bindgen-test"
-version = "0.2.50"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a2d9693b63a742d481c7f80587e057920e568317b2806988c59cd71618bc26c1"
-dependencies = [
- "console_error_panic_hook",
- "futures 0.1.30",
- "js-sys",
- "scoped-tls",
- "wasm-bindgen",
- "wasm-bindgen-futures 0.3.27",
- "wasm-bindgen-test-macro",
-]
-
-[[package]]
-name = "wasm-bindgen-test-macro"
-version = "0.2.50"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0789dac148a8840bbcf9efe13905463b733fa96543bfbf263790535c11af7ba5"
-dependencies = [
- "proc-macro2 0.4.30",
- "quote 0.6.13",
-]
 
 [[package]]
 name = "web-sys"

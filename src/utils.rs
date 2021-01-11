@@ -4,12 +4,11 @@ use moxie_dom::raw::JsCast;
 use moxie_dom::{elements::scripting::Canvas, prelude::*};
 
 pub fn get_rendering_context(canvas: &Canvas) -> sys::CanvasRenderingContext2d {
-    let canvas: &sys::HtmlCanvasElement = canvas
-        .raw_node_that_has_sharp_edges_please_be_careful()
-        .expect_concrete()
-        .dyn_ref()
-        .unwrap();
     canvas
+        .to_bind()
+        .expect_concrete()
+        .dyn_ref::<sys::HtmlCanvasElement>()
+        .unwrap()
         .get_context("2d")
         .unwrap()
         .unwrap()
