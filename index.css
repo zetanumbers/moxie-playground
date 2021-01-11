@@ -33,3 +33,31 @@ tr:nth-child(odd) td {
 caption {
     padding: 10px;
 }
+body {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background: #fff;
+  font-family: "Calibri", "Arial", sans-serif;
+}
+#header {
+  background: #dee;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #abb;
+}
+p {
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0.5em 0;
+}
+ul {
+  margin: 0;
+}
+li {
+  display: inline;
+  margin: 0.5em;
+  font-size: 0.9em;
+}
+canvas {
+  margin: 0;
+}
